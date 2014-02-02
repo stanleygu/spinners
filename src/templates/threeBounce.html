@@ -1,0 +1,58 @@
+<style>
+/***** Three-bounce ***/
+ .three-bounce {
+  text-align: center;
+  font-size: 26px;
+  position: relative;
+  top: -26px;
+  width: 80px;
+  margin-right: 30px;
+}
+.three-bounce > div {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #fff;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.three-bounce .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.three-bounce .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0.0)
+  }
+  40% {
+    -webkit-transform: scale(1.0)
+  }
+}
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  }
+  40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+</style>
+<div class="spinner-background">
+</div>
+<div class="spinner-container">
+  <div class="spinner three-bounce">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
