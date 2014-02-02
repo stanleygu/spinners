@@ -1,5 +1,5 @@
 {
-  "name": "spinkit",
+  "name": "spinners",
   "version": "0.0.1",
   "description": "Angular Spinner Directive",
   "main": " ",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stanley-gu/spinkit.git"
+    "url": "https://github.com/stanley-gu/spinners.git"
   },
   "keywords": [
     "angular",
@@ -30,7 +30,7 @@
     "shelljs": "~0.2.0"
   },
   "bugs": {
-    "url": "https://github.com/stanley-gu/spinkit/issues"
+    "url": "https://github.com/stanley-gu/spinners/issues"
   },
-  "homepage": "https://github.com/stanley-gu/spinkit"
+  "homepage": "https://github.com/stanley-gu/spinners"
 }

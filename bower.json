@@ -1,17 +1,17 @@
 {
-  "name": "spinkit",
+  "name": "spinners",
   "version": "0.0.1",
   "authors": [
     "Stanley Gu <stanleygu@gmail.com>"
   ],
   "description": "Angular Spinner Directive",
-  "main": "build/spinkit.js",
+  "main": "dist/spinners.min.js",
   "keywords": [
     "spinners",
     "angular"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/stanley-gu/spinkit",
+  "homepage": "https://github.com/stanley-gu/spinners",
   "ignore": [
     "**/.*",
     "node_modules",

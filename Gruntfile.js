@@ -15,7 +15,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     // Project settings
-    spinkit: {
+    spinners: {
       // configurable paths
       demo: 'demo',
       src: 'src',
@@ -29,8 +29,8 @@ module.exports = function(grunt) {
           dot: true,
           src: [
             '.tmp',
-            '<%= spinkit.dist %>/*',
-            '!<%= spinkit.dist %>/.git*'
+            '<%= spinners.dist %>/*',
+            '!<%= spinners.dist %>/.git*'
           ]
         }]
       }
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
       demo: {
         options: {
           base: [
-            '<%= spinkit.demo %>',
+            '<%= spinners.demo %>',
             ''
           ]
         }
@@ -59,8 +59,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '.tmp',
-          src: ['spinkit.js'],
-          dest: '<%= spinkit.dist %>'
+          src: ['spinners.js'],
+          dest: '<%= spinners.dist %>'
         }]
       }
     },
@@ -68,16 +68,16 @@ module.exports = function(grunt) {
     html2js: {
       dist: {
         options: {
-          module: 'stanley-gu.spinkit.templates',
+          module: 'stanley-gu.spinners.templates',
           base: '.'
         },
         // files: [{
         //   expand: true,
-        //   src: ['<%= spinkit.src %>/templates/**/*.html'],
-        //   dest: '<%= spinkit.dist %>/templates',
+        //   src: ['<%= spinners.src %>/templates/**/*.html'],
+        //   dest: '<%= spinners.dist %>/templates',
         //   ext: '.html.js'
         // }]
-        src: ['<%= spinkit.src %>/templates/**/*.html'],
+        src: ['<%= spinners.src %>/templates/**/*.html'],
         dest: '.tmp/templates.js'
 
       }
@@ -99,8 +99,8 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          '<%= spinkit.dist %>/spinkit.min.js': [
-            '<%= spinkit.dist %>/spinkit.js'
+          '<%= spinners.dist %>/spinners.min.js': [
+            '<%= spinners.dist %>/spinners.js'
           ]
         }
       }
@@ -108,10 +108,10 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         options: {
-          banner: 'angular.module("stanley-gu.spinners", ["stanley-gu.spinkit", "stanley-gu.spinkit.templates"])\n'
+          banner: 'angular.module("stanley-gu.spinners", ["stanley-gu.spinners.src", "stanley-gu.spinners.templates"])\n'
         },
-        src: ['<%= spinkit.src %>/**/*.js', '.tmp/templates.js'],
-        dest: '.tmp/spinkit.js'
+        src: ['<%= spinners.src %>/**/*.js', '.tmp/templates.js'],
+        dest: '.tmp/spinners.js'
       }
     }
 
