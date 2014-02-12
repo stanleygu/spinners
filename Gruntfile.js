@@ -17,7 +17,6 @@ module.exports = function(grunt) {
     // Project settings
     spinners: {
       // configurable paths
-      demo: 'demo',
       src: 'src',
       dist: 'dist'
     },
@@ -29,7 +28,7 @@ module.exports = function(grunt) {
           dot: true,
           src: [
             '.tmp',
-            '<%= spinners.dist %>/*',
+            '<%= spinners.dist %>/*.js',
             '!<%= spinners.dist %>/.git*'
           ]
         }]
@@ -45,7 +44,7 @@ module.exports = function(grunt) {
       demo: {
         options: {
           base: [
-            '<%= spinners.demo %>',
+            '<%= spinners.dist %>',
             ''
           ]
         }
