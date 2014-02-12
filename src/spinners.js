@@ -18,7 +18,7 @@ angular.module('stanleygu.spinners.src', [])
       // },
       link: function postLink(scope, element, attr) {
         function loadTemplate(template) {
-          var base = '/src/templates/';
+          var base = 'src/templates/';
           var url = base + template + '.html';
           $http.get(url, {
             cache: $templateCache
