@@ -1,7 +1,7 @@
 'use strict';
 /*jshint multistr:true*/
 
-angular.module('stanley-gu.spinners.src', [])
+angular.module('stanleygu.spinners.src', [])
   .directive('spinner', function($http, $templateCache, $compile) {
     return {
       restrict: 'E',

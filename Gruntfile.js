@@ -68,7 +68,7 @@ module.exports = function(grunt) {
     html2js: {
       dist: {
         options: {
-          module: 'stanley-gu.spinners.templates',
+          module: 'stanleygu.spinners.templates',
           base: '.'
         },
         // files: [{
@@ -108,7 +108,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         options: {
-          banner: 'angular.module("stanley-gu.spinners", ["stanley-gu.spinners.src", "stanley-gu.spinners.templates"])\n'
+          banner: 'angular.module("stanleygu.spinners", ["stanleygu.spinners.src", "stanleygu.spinners.templates"])\n'
         },
         src: ['<%= spinners.src %>/**/*.js', '.tmp/templates.js'],
         dest: '.tmp/spinners.js'

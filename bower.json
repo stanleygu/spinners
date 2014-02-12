@@ -11,7 +11,7 @@
     "angular"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/stanley-gu/spinners",
+  "homepage": "https://github.com/stanleygu/spinners",
   "ignore": [
     "**/.*",
     "node_modules",

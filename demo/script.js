@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp', ['stanley-gu.spinners']);
+angular.module('myApp', ['stanleygu.spinners']);
 
 angular.module('myApp')
   .controller('DemoCtrl', function($scope) {

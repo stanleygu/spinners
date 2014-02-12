@@ -1,9 +1,9 @@
-angular.module('stanley-gu.spinners', [
-  'stanley-gu.spinners.src',
-  'stanley-gu.spinners.templates'
+angular.module('stanleygu.spinners', [
+  'stanleygu.spinners.src',
+  'stanleygu.spinners.templates'
 ]);
 'use strict';
-angular.module('stanley-gu.spinners.src', []).directive('spinner', [
+angular.module('stanleygu.spinners.src', []).directive('spinner', [
   '$http',
   '$templateCache',
   '$compile',
@@ -71,7 +71,7 @@ angular.module('stanley-gu.spinners.src', []).directive('spinner', [
     };
   }
 ]);
-angular.module('stanley-gu.spinners.templates', [
+angular.module('stanleygu.spinners.templates', [
   'src/templates/chasingDots.html',
   'src/templates/circle.html',
   'src/templates/doubleBounce.html',
