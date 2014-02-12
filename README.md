@@ -30,8 +30,8 @@ loading="{{loading}}"></spinner>
 ];
 ```
 
-`loading` is a boolean that turns on and off the spinner
+`loading` is a boolean that turns on and off the spinner.
 
-`color` and `screen-color` are CSS color names for the the spinner color and background screen color, respectively.
+`color` and `screen-color` are CSS color names for the spinner color and background screen color, respectively.
 
-`opacity` is a number from 0-1 for the screen opacity
+`opacity` is a number from 0-1 for the screen opacity.
