@@ -10,7 +10,8 @@ angular.module('stanleygu.spinners.src', [])
         screenOpacity: '@',
         color: '@',
         loading: '@',
-        template: '@'
+        template: '@',
+        zIndex: '@'
       },
       // templateUrl: function($element, $attrs) {
       //   var base = '/templates/';
@@ -42,7 +43,7 @@ angular.module('stanleygu.spinners.src', [])
             .css('position', 'absolute')
             .css('top', '45%')
             .css('left', '50%')
-            .css('z-index', '100');
+            .css('z-index', attr.zIndex || '100');
 
           angular.element(element[0].querySelector('.spinner'))
             .css('position', 'relative')
@@ -50,7 +51,7 @@ angular.module('stanleygu.spinners.src', [])
             .css('left', '-50%')
             .css('margin', 'auto auto 0')
             .css('text-align', 'center')
-            .css('z-index', '101');
+            .css('z-index', attr.zIndex + 1 || '101');
 
           var t = element.attr('template');
           if (t === 'pulse' || t === 'rotatePlane') {
@@ -71,7 +72,7 @@ angular.module('stanleygu.spinners.src', [])
           .css('right', '0')
           .css('bottom', '0')
           .css('left', '0')
-          .css('z-index', '99');
+          .css('z-index', attr.zIndex - 1 || '99');
 
         scope.$watch('loading', function(newVal) {
           if (newVal === 'true' || newVal === true) {

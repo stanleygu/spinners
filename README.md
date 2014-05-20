@@ -13,7 +13,7 @@ angular.module('myApp', ['stanleygu.spinners']);
 Invoke the directives with the desired attributes
 ```html
 <spinner template="{{type}}" color="{{color}}" screen-color="{{screenColor}}" screen-opacity="{{screenOpacity}}" 
-loading="{{loading}}"></spinner>
+loading="{{loading}}" z-index="200"></spinner>
 ```
 
 `template` is a string containing one of 7 different spinner types:
@@ -35,3 +35,5 @@ loading="{{loading}}"></spinner>
 `color` and `screen-color` are CSS color names for the spinner color and background screen color, respectively.
 
 `opacity` is a number from 0-1 for the screen opacity.
+
+`z-index` is the z-index of the spinner.
